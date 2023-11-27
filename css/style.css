@@ -698,11 +698,19 @@ line-height: 31px;
   color: #FFD74B;
 }
 .registration__input {
+  
   width: 850px;
   height: 81px;
   border-radius: 20px;
   border: none;
   margin-bottom: 70px;
+}
+.registration__input {
+  width: 616px;
+  padding-left: 10px;
+}
+.registration__input::placeholder {
+  padding-left: 5px;
 }
 .registration__button {
   position: absolute;
@@ -1310,15 +1318,11 @@ position: relative;
 
   }
 }
-@media screen and (max-width: 1086px) {
-  .nav {
-    display: none;
-  }
-  .registration__button {
-    left: 786px;
-  }
-}
+
 @media screen and (max-width: 1401px) {
+  .menu__burger {
+     display: none;
+}
   .hero__cards {
     width: 500px;
 
@@ -1340,6 +1344,17 @@ position: relative;
 .registration__button {
   left: 848px;
   top: 147px;
+}
+}
+@media screen and (max-width: 1086px) {
+  .nav {
+    display: none;
+  }
+  .registration__button {
+    left: 786px;
+  }
+  .menu__burger {
+     display: flex; 
 }
 }
 @media screen and (max-width: 1200px) {
@@ -1676,6 +1691,7 @@ position: relative;
   .header__content {
     display: block;
   }
+  
   .hero__content {
     background: none;
   }
@@ -2152,6 +2168,25 @@ position: relative;
 
 
 @media screen and (max-width: 320px) {
+  .contacts {
+    position: absolute;
+    top: 445px;
+    z-index: 1;
+    left: -15px;
+}
+  .phone.contacts__phone {
+  display: flow;
+}
+.mail.contacts__mail {
+  display: flow;
+}
+.authorization.contacts__authorization {
+  display: flow;
+}
+
+  .phone {
+    display: none;
+  }
   .traveller__mobile {
     width: 192px;
     height: 255px;
@@ -2331,7 +2366,8 @@ position: relative;
   }
   .travellers__cards {
     display: block;
-    margin-left: -23px;
+    
+      margin-left: 2px;
   }
   .card__imagetwo {
     margin: 0;
@@ -2489,7 +2525,7 @@ position: relative;
   height: 21px;
 }
 .address__name {
-  margin-left: 7px;
+  margin-left: 63px;
   width: 350px;
   height: 44px;
   
@@ -2605,6 +2641,9 @@ position: relative;
     text-align: center;
     font-size: 36px;
     margin-bottom: 10px;
+  }
+  .address__name {
+      margin-left: 63px;
   }
   .hero__content {
     display: flex;
@@ -3006,3 +3045,12 @@ position: relative;
     bottom: 67px;
   }
 } */
+
+
+
+@media screen and (max-width: 320px) {
+  .address__name {
+    margin-left: 63px;
+
+  }
+}

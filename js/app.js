@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   let modalItemService = document.querySelector('.modal__menu-item')
   let modalItemCountries = document.querySelector('#modCountries')
   let modalItemTravellers = document.querySelector('#modTravellers')
+  let heroContent = document.querySelector('.hero__content');
 
   
   console.log(businessText);
@@ -43,6 +44,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
     
   })
   
+
+  
   menuBurger.addEventListener('click', () => {
     if(modalMenu.style.display === '') {
       modalMenu.style.display = 'flex'
@@ -53,6 +56,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
       menuBurger.style.background = '#fff'
       logoMenuBurger.style.backgroundColor = 'white'
       logoMobile.src = '/img/logo_mobile 1.png'
+      heroContent.style.marginLeft = '-124px';
+
     } else {
       modalMenu.style.display = ''
       body.style.position = 'static'
@@ -61,12 +66,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
       logoMenuBurger.src = '/img/Menu-icon_tablet.png'
       logoMenuBurger.style.background = '#182044'
       logoMobile.src = '/img/lobo_mobile.svg'
+      heroContent.style.marginLeft = '0px';
     }
    
   })
   document.onscroll = function () {
     let scroll = window.scrollY;
-    if (scroll > headerH) {
+    if (scroll  >  500) {
+      console.log(scroll);
       header.classList.add('fixed')
       navItemOne.classList.add('light')
       navItemTwo.classList.add('light')
@@ -75,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
       logoMenuBurger.src = '/img/icon_menu_mobile-light.png'
       logoMenuBurger.style.background = '#fff'
       logoMobile.src = '/img/logo_mobile 1.png'
+      document.querySelector('.contacts').style.display = 'none';
    
     } else {
       header.classList.remove('fixed')
@@ -85,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
       logoMenuBurger.src = '/img/Menu-icon_tablet.png'
       logoMenuBurger.style.background = '#182044'
       logoMobile.src = '/img/lobo_mobile.svg'
+      document.querySelector('.contacts').style.display = 'flex';
     }
   
   }
