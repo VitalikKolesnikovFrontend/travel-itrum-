@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="/css/reset.css"> -->
+  <title>Document</title>
+</head>
+<body>
+
+
+  <header class="header">
+    <div class="container">
+      <div class="menu">
+        <div class="logo menu__logo">
+          <img src="/img/logo-light.png" alt="logo-light" class="logo-light">
+        </div>
+        <img src="/img/lobo_mobile.svg" alt="logo-mobile" class="logo__mobile">
+        <button class="menu__burger">
+          <img src="/img/Menu-icon_tablet.png" alt="burger" class="menu-burger-icon">
+        </button>
+        <nav class="nav menu__nav">
+          <a href="#" class="nav__item">
+            <img src="/img/rectangle-light.png" alt="rectangle-light">
+          </a>
+          <a href="#service" class="nav__item">о сервисе</a>
+          <a href="#countries" class="nav__item">направления</a>
+          <a href="#travellers" class="nav__item">попутчики</a>
+        </nav>
+        <div class="contacts menu__contacts">
+          <button class="phone contacts__phone">
+            <img src="/img/phone.png" alt="phone" />
+          </button>
+          <button class="mail contacts__mail">
+            <img src="/img/mail.png" alt="mail" />
+          </button>
+          <button class="authorization contacts__authorization">авторизация</button>
+        </div>
+        </div>
+    </div>
+  </header>
+  <div class="modal__menu">
+    <div class="modal__menu-list">
+      <a href="#service" class="modal__menu-item">о сервисе</a>
+      <a href="#countries" id="modCountries" class="modal__menu-item">направления</a>
+      <a href="#travellers" id="modTravellers" class="modal__menu-item">попутчики</a>
+      <div class="registration__contacts registration__contacts_modal">
+        <div class="registration__phone">
+          <button  class="contacts__button">
+            <img src="/img/icon_telephone.png" alt="phone">
+          </button>
+          <a href="#" class="phone__number phone__number_modal">8 800 555-86-28</a>
+        </div>
+        <div class="registration__mail">
+          <button  class="contacts__button">
+            <img src="/img/icon_mail.png" alt="mail">
+          </button>
+          <a href="#" class="mail__name mail__name_modal">mail@htmlacademy.ru</a>
+        </div>
+      </div>
+      <div class="modal__social-list">
+        <div class="modal__social-items">
+          <img src="/img/header-fb.png" alt="fb" class="modal__social-item">
+          <img src="/img/header-vkontakte.png" alt="vk" class="modal__social-item">
+          <img src="/img/header-instagram.png" alt="inst" class="modal__social-item">
+        </div>
+      </div>
+    </div>
+  </div>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">В путешествие с крутыми попутчиками!</h1>
+          <img src="/img/traveller.png" alt="traveller" class="hero__image" />
+          <div class="hero__info">
+            <h3 class="hero__text">«Лучшее приложение, что я видел в жизни!»</h3>
+            <p class="hero__secondtext">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+          </div>
+          <img src="/img/traveller-illustration-tablet 1.png" alt="traveller-mobile" class="traveller__mobile">
+          <div class="hero__cards">
+            <div class="hero__card hero__card_one">
+              <p class="card-title">Выберите направление</p>
+              <p class="card-count">1</p>
+            </div>
+            <div class="hero__card hero__card_two">
+              <p class="card-title">Изучите идеи путешественников</p>
+              <p class="card-count">2</p>
+            </div>
+            <div class="hero__card hero__card_three">
+              <p class="card-title">Находите тех, кто похож на вас</p>
+              <p class="card-count">3</p>
+            </div>
+            <div class="hero__card hero__card_four">
+              <p class="card-title">Путешествуйте вместе!</p>
+              <p class="card-count">4</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  <header class="header header_light">
+    <div class="container">
+      <div class="menu">
+        <div class="logo menu__logo">
+          <img src="/img/logo-dark.png" alt="logo" />
+        </div>
+        <nav class="nav menu__nav">
+          <a href="#" class="nav__item">
+            <img src="/img/rectangle-dark.png" alt="rectangle" />
+          </a>
+          <a href="#" class="nav__item nav__item_light">о сервисе</a>
+          <a href="#" class="nav__item nav__item_light">направления</a>
+          <a href="#" class="nav__item nav__item_light">попутчики</a>
+        </nav>
+        <div class="contacts menu__contacts">
+          <button class="phone contacts__phone">
+            <img src="/img/phone.png" alt="phone" />
+          </button>
+          <button class="mail contacts__mail">
+            <img src="/img/mail.png" alt="mail" />
+          </button>
+          <button class="authorization contacts__authorization">авторизация</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="service" id="service">
+    <div class="container">
+      <div class="service__content">
+        <div class="service__info">
+          <h1 class="service__title">О сервисе</h1>
+          <h2 class="service__subtitle">
+            Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь
+            своими идеями путешествий и черпайте вдохновение в чужих.
+          </h2>
+          <p class="service__text">
+            А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+          </p>
+          <button class="button button__service">
+            <p class="button__text">Подробнее</p>
+            <img class="button__img" src="/img/play.png" alt="play" />
+          </button>
+          <!-- <img src="/img/rectangle-tablet-service.png" alt="rectangle-tablet-service" class="service__back"> -->
+          <img src="/img/back.png" alt="back" class="service__back">
+        </div>
+        <img src="/img/service-img.png" alt="service-img" class="service__img" />
+        <img src="/img/service-tablet.png" alt="service-tablet" class="service__tablet">
+      </div>
+    </div>
+  </section>
+
+  <section class="countries" id="countries">
+    <div class="container">
+      <div class="countries__content">
+        <div class="countries__cards">
+          <div class="countries__card countries__card_tha">
+            <div class="countries__name">
+              <h1>Тайланд</h1>
+              <h2>Джунгли зовут!</h2>
+            </div>
+            <div class="countries__user">
+              <img src="/img/icon_user.png" alt="user" class="countries__user">
+              <p class="countries__count">18321</p>
+            </div>
+          </div>
+          <img src="/img/Thailand.png" alt="Thailand" class="countries__flag_tha">
+          <div class="countries__card countries__card_fra">
+            <div class="countries__name">
+              <h1>Франция</h1>
+              <h2>Трэ бьен, манифик!</h2>
+            </div>
+            <div class="countries__user">
+              <img src="/img/icon_user.png" alt="user" class="countries__user">
+              <p class="countries__count">12518</p>
+            </div>
+          </div>
+          <img src="/img/France.png" alt="France" class="countries__flag_fra">
+          <div class="countries__card countries__card_che">
+            <div class="countries__name">
+              <h1>Чехия</h1>
+              <h2>Закоулки старой Европы</h2>
+            </div>
+            <div class="countries__user">
+              <img src="/img/icon_user.png" alt="user" class="countries__user">
+              <p class="countries__count">5325</p>
+            </div>
+          </div>
+          <img src="/img/Czech.png" alt="Czech" class="countries__flag_che">
+        </div>
+        <div class="countries__mobile">
+          <img src="/img/cart_coutry-tha.png" alt="cart_coutry-tha" class="countries__mobile-img">
+          <img src="/img/cart_coutry -fra.png" alt="cart_coutry-tha" class="countries__mobile-img">
+          <img src="/img/cart_coutry -che.png" alt="cart_coutry-che" class="countries__mobile-img">
+        </div>
+        <div class="countries__info">
+          <h1 class="countries__title">Направления</h1>
+          <p class="countries__subtitle">Мы не продаем туры и ничего не рекламируем. 
+            Люди сами пишут о странах,куда хотели бы отправиться и чем можно там заняться.
+          </p>
+          <button class="button button__countries">
+            <p class="button__text">Показать все</p>
+            <img class="button__img" src="/img/play.png" alt="play" />
+          </button>
+        </div>
+        <button class="button button__tablet">
+          <p class="button__text">Показать все</p>
+          <img class="button__img" src="/img/play.png" alt="play" />
+        </button>
+        <img src="/img/Rectangle-countries.png" alt="rectangle__countries" class="countries__rectangle">
+        <img src="/img/flags-back.png" alt="flags-back" class="countries__flags">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="travellers" id="travellers">
+    <div class="container">
+      <div class="travellers__content">
+        <div class="travellers__info">
+          <h1 class="travellers__title">Попутчики</h1>
+          <h2 class="travellers__subtitle">Все мы индивидуальны и у каждого
+            свой взгляд на идеальный отдых. 
+            Одному нужен пляж и коктейль, 
+            а другому маршрут для хайкинга. 
+          </h2>
+          <p class="travellers__text">Теперь можно легко
+          найти единомышленников!</p>
+          <button class="button button__travellers">
+            <p class="button__text">Показать всех</p>
+            <img src="/img/play.png" alt="play" class="button__img">
+          </button>
+        </div>
+        <div class="travellers__cards">
+          <img src="/img/user-card1.png" alt="user-card1" class="card__imageone">
+          <img src="/img/user-card2.png" alt="user-card2" class="card__imagetwo">
+        </div>
+        <img src="/img/back.png" alt="back" class="travellers__back">
+        <img src="/img/smolov-back-desktop.png" alt="travellers__user" class="travellers__user">
+        <img src="/img/rogovaya-back-desktop.png" alt="travellers__seconduser" class="travellers__seconduser">
+        <button class="button button__tablet">
+          <p class="button__text">Показать все</p>
+          <img class="button__img" src="/img/play.png" alt="play" />
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="profile">
+    <div class="container">
+      <div class="profile__rates">
+        <h1 class="profile__title">Добавьте свой профиль</h1>
+        <img src="/img/rates-mobile.png" alt="rates-mobile" class="rates__mobile">
+      </div>
+      <div class="profile__content">
+        <div class="profile__info">
+          <ul class="profile__list">
+            <li class="profile__item">
+              <img src="/img/circle1.png" alt="one" class="profile__img">
+              <p class="item__text">Базовое размещение</p>
+            </li>
+            <li class="profile__item">
+              <img src="/img/ circle2.png" alt="one" class="profile__img">
+              <p class="item__text">Вывод на первых позициях</p>
+            </li>
+            <li class="profile__item">
+              <img src="/img/circle3.png" alt="one" class="profile__img">
+              <p class="item__text">Кастомный цвет карточки</p>
+            </li>
+          </ul>
+        </div>
+        <div class="profile__price">
+          <ul class="price__list">
+            <li class="price__item">Бесплатно</li>
+            <li class="price__item">99 руб./мес</li>
+            <li class="price__item">59 руб./мес</li>
+            <img class="price__rates" src="/img/rates.png" alt="rates">
+          </ul>
+        </div>
+      </div>
+      <div class="profile__mobile">
+        <div class="profile__mobile-list">
+          <div class="mobile__items">
+            <div class="profile__mobile-item">
+              <p class="mobile-item__text">Базовое размещение</p>
+              <p class="mobile-item__text">Бесплатно</p>
+            </div>
+            <div class="profile__mobile-item profile__mobile-item-two">
+              <p class="mobile-item__text">Вывод на первых позициях</p>
+              <p class="mobile-item__text">99 руб./мес</p>
+            </div>
+            <div class="profile__mobile-item">
+              <p class="mobile-item__text">Кастомный цвет карточки</p>
+              <p class="mobile-item__text">59 руб./мес</p>
+            </div>
+          </div>
+          <div class="circle__mobile-items">
+            <img class="circle__mobile" src="/img/circle1.png" alt="circle1">
+            <img class="circle__mobile"src="/img/ circle2.png" alt="circle2">
+            <img class="circle__mobile" src="/img/circle3.png" alt="circle3">
+          </div>
+        </div>
+      </div>
+      <div class="profile__business">
+        <button class="business__icon">
+          <img src="/img/icon-businessman.png" alt="icon-businessman">
+        </button>
+        <p class="business__text">Показать тарифы для бизнеса</p>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="container">
+        <div class="modal__content">
+          <h1 class="modal__title">Бизнес-тарифы</h1>
+          <div class="modal__list">
+            <div class="modal__item">Реклама у блоггера</div>
+            <div class="modal__item">300 000 руб./пост</div>
+            <div class="modal__item">Накрутка подписчиков</div>
+            <div class="modal__item">от 1 руб./шт.</div>
+            <div class="modal__item">Лайки от ботов</div>
+            <div class="modal__item">от 20 коп./лайк</div>
+            <div class="modal__item">Ваш продакт-плейсмент </div>
+            <div class="modal__item">Индивидуально</div>
+          </div>
+          <button class="modal__button">Закрыть окно</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="registration">
+    <div class="container">
+      <div class="registration__content">
+        <h1 class="registration__title">Заинтересовались?</h1>
+        <div class="registration__modal">
+          <p class="registration__text">Зарегистрируйтесь, это быстро и бесплатно!
+            Уже зарегистрированы? Тогда скорее <a href="#">авторизуйтесь</a>.</p>
+          <input type="text" placeholder="E-mail" class="registration__input">
+          <button class="button registration__button">
+            <p class="button__text button__text-registration">Регистрация</p>
+            <img src="/img/play.png" alt="play" class="button__img">
+          </button>
+          <p class="registration__text">Остались вопросы? Мы с радостью на них ответим!</p>
+          <div class="registration__contacts">
+            <div class="registration__phone">
+              <button  class="contacts__button">
+                <img src="/img/icon_telephone.png" alt="phone">
+              </button>
+              <a href="#" class="phone__number">8 800 555-86-28</a>
+            </div>
+            <div class="registration__mail">
+              <button  class="contacts__button">
+                <img src="/img/icon_mail.png" alt="mail">
+              </button>
+              <a href="#" class="mail__name">mail@htmlacademy.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="address">
+    <div class="container">
+      <div class="address__content">
+        <div class="address__name">
+          <button class="name__button">
+            <img src="/img/icon_location.png" alt="icon_location" class="address__img">
+          </button>
+          <p class="address__text">ул. Большая Конюшенная, 19/8</p>
+        </div>
+        <button class="button address__button">
+          <p class="button__text">Проложить маршрут</p>
+          <img src="/img/play.png" alt="play" class="button__img">
+        </button>
+      </div>
+    </div>
+  </section>
+   
+  <section class="map">
+    <!-- <div class="map__content">
+      <img src="/img/geo.png" alt="map" class="map__img">
+      <img src="img/map-mobile.png" alt="" class="map__img-mobile">
+      <img src="/img/icon_map.png" alt="geo" class="map__geo">
+    </div> -->
+    <div class="map__box">
+      <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198223!2d30.320472477369183!3d59.93871916209349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1700822013643!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer__content">
+      <img src="/img/logo_mobile-footer.png" alt="logo-mobile" class="logo__mobile-footer">
+      <img src="/img/logo-dark.png" alt="logo-dark" class="logo__footer">
+      <div class="footer__social">
+        <button class="button__social">
+          <img src="/img/facebook.png" alt="facebook" class="fb__img">
+        </button>
+        <button class="button__social">
+          <img src="/img/vkontakte.png" alt="facebook" class="fb__img">
+        </button>
+        <button class="button__social">
+          <img src="/img/instagram.png" alt="facebook" class="fb__img">
+        </button>
+      </div>
+      <div class="footer__dev">
+        <p class="dev__text">Разработано</p>
+        <img src="/img/html.png" alt="html" class="dev__img">
+      </div>
+    </div>
+    
+  </footer>  
+<script src="/js/app.js"></script>
+</body>
+</html>
