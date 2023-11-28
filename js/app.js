@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   let modalItemService = document.querySelector('.modal__menu-item')
   let modalItemCountries = document.querySelector('#modCountries')
   let modalItemTravellers = document.querySelector('#modTravellers')
-  let heroContent = document.querySelector('.hero__content');
+  // let heroContent = document.querySelector('.hero__content');
 
   
   console.log(businessText);
@@ -43,7 +43,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
     modalMenu.style.display = '';
     
   })
-  
+  // position: relative;
+  //   bottom: 239px;
+  //   right: -46px;
 
   
   menuBurger.addEventListener('click', () => {
@@ -56,7 +58,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
       menuBurger.style.background = '#fff'
       logoMenuBurger.style.backgroundColor = 'white'
       logoMobile.src = '/img/logo_mobile 1.png'
-      heroContent.style.marginLeft = '-124px';
+      // heroContent.style.marginLeft = '-124px';
+      
+      
+
 
     } else {
       modalMenu.style.display = ''
@@ -66,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
       logoMenuBurger.src = '/img/Menu-icon_tablet.png'
       logoMenuBurger.style.background = '#182044'
       logoMobile.src = '/img/lobo_mobile.svg'
-      heroContent.style.marginLeft = '0px';
+      // heroContent.style.marginLeft = '0px';
     }
    
   })

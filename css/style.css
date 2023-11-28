@@ -999,7 +999,10 @@ position: relative;
     
   }
   .hero__info {
-    margin-left: 245px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: -162px;
 }
 .traveller__mobile {
   left: 596px;
@@ -1289,18 +1292,12 @@ position: relative;
   .hero__image {
     max-width: 300px;
   }
-  .hero__title {
-    font-size: 30px;
-    line-height: 45px;
-  }
-  .hero__text {
-    font-size: 15px;
-  }
-  .hero__secondtext {
-    font-size: 15px;
-  }
+
   .header_light {
     display: none;
+  }
+  .registration__button {
+    left: 651px;
   }
 } 
 
@@ -1320,6 +1317,9 @@ position: relative;
 }
 
 @media screen and (max-width: 1401px) {
+  .service {
+    margin-top: 300px;
+  }
   .menu__burger {
      display: none;
 }
@@ -1332,15 +1332,17 @@ position: relative;
     flex-wrap: wrap;
  margin: 0 auto;
  left: 0;
- right: ;
+ right: 0;
     margin-bottom: 64px;
 }
 .traveller__mobile {
   display: block;
   display: block;
   position: absolute;
-  top: 185px;
-  left: 598px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 193px;
   width: 300px;
 }
 .registration__button {
@@ -1362,6 +1364,7 @@ position: relative;
 @media screen and (max-width: 1200px) {
   .registration__button {
     left: 786px;}
+
 }
 @media screen and (max-width: 1064px) {
 
@@ -1377,15 +1380,14 @@ position: relative;
   top: 177px;
   left: 691px;
 }
-.hero__info {
-  margin-left: 49px;
+
+
+
 }
-.traveller__mobile {
-  left: 407px;
-}
-.hero__cards {
-  
-}
+@media screen and (max-width: 927px) {
+  .registration__button {
+    left: 652px;
+  }
 }
 @media screen and (max-width: 803px) {
   .hero__cards {
@@ -1487,8 +1489,7 @@ position: relative;
   display: block;
   display: block;
   position: absolute;
-  top: 143px;
-  left: 248px;
+
   width: 300px;
 }
 .hero__text {
@@ -1686,6 +1687,35 @@ position: relative;
   }
 }
 @media screen and (max-width: 710px) {
+  .travallers {
+    display: flex;
+  }
+  .menu__contacts {
+    margin: 0 auto;
+  left: 0;
+  right: -42px;
+  max-width: 290px;
+  top: 460px;
+  }
+  .phone.contacts__phone {
+    display: flow;
+  }
+  .mail.contacts__mail {
+    display: flow;
+  }
+  .authorization.contacts__authorization {
+    display: flow;
+  }
+  .hero__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .hero__text {
+    font-size: 15px;
+  }
+  .hero__secondtext {
+    font-size: 15px;
+  }
   .traveller__mobile {
     width: 192px;
     height: 255px;
@@ -1757,9 +1787,12 @@ position: relative;
     order: 1;
   }
   .hero__info {
-    margin: 0;
+    margin: 0 auto;
     order: 2;
     margin-top: 48px;
+    position: relative;
+    left: -5px;
+    max-width: 170px;
   }
   .phone {
     display: initial;
@@ -1785,8 +1818,9 @@ position: relative;
     left: 42px;
     bottom: -400px; */
       display: flow;
-    
-      top: 593px;
+      max-width: 239px;
+      top: 618px;
+      
   }
   .hero__card {
     width: 238px;
@@ -2000,7 +2034,7 @@ position: relative;
   }
   .registration__input {
     width: 280px;
-    margin-left: -25px;
+    margin-left: -5px;
 }
 .registration__button {
   left: 174px;
@@ -2696,7 +2730,7 @@ position: relative;
     left: 42px;
     bottom: -400px; */
     display: flow;
-    top: 593px;
+    top: 618px;
     
   }
   .hero__card {
@@ -2799,7 +2833,7 @@ position: relative;
     flex-direction: column;
     bottom: -400px;
     display: flow;
-    top: 593px;
+    top: 618px;
     
   }
   .card__imagetwo {
@@ -2896,7 +2930,7 @@ position: relative;
   }
   .registration__input {
     width: 280px;
-    margin-left: -25px;
+    margin-left: 0px;
 }
 .registration__button {
   left: 174px;
