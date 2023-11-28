@@ -1330,7 +1330,9 @@ position: relative;
     grid-template-columns: 50% 50%;
     bottom: -345px;
     flex-wrap: wrap;
-    left: 413px;
+ margin: 0 auto;
+ left: 0;
+ right: ;
     margin-bottom: 64px;
 }
 .traveller__mobile {
@@ -1382,7 +1384,7 @@ position: relative;
   left: 407px;
 }
 .hero__cards {
-  left: 199px;
+  
 }
 }
 @media screen and (max-width: 803px) {
@@ -1392,7 +1394,7 @@ position: relative;
     grid-template-columns: 50% 50%;
     bottom: -345px;
     flex-wrap: wrap;
-    left: 180px;
+    
     margin-bottom: 64px;
 }
 }
@@ -1471,7 +1473,7 @@ position: relative;
 .hero__cards {
     display: grid;
     grid-template-columns: 251px 132px;
-    left: 84px;
+    
     top: 506px;
 }
 
@@ -1783,7 +1785,7 @@ position: relative;
     left: 42px;
     bottom: -400px; */
       display: flow;
-      left: 198px;
+    
       top: 593px;
   }
   .hero__card {
@@ -2272,7 +2274,7 @@ position: relative;
     bottom: -400px; */
     display: flow;
     top: 593px;
-    left: 25px;
+    
   }
   .hero__card {
     width: 238px;
@@ -2795,11 +2797,10 @@ position: relative;
   .hero__cards {
     display: flex;
     flex-direction: column;
-    left: 42px;
     bottom: -400px;
     display: flow;
     top: 593px;
-    left: 72px;
+    
   }
   .card__imagetwo {
     margin: 0;
